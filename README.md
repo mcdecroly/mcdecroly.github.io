@@ -13,9 +13,11 @@ How to View
 To view this page, simply clone this repository and open the index.html file in your preferred browser.
 
 *Copy code*
+```
 git clone https://github.com/your-username/error-404-portfolio.git
 cd error-404-portfolio
 open index.html
+```
 
 Or you can view the live version https://mcdecroly.github.io/ .
 
