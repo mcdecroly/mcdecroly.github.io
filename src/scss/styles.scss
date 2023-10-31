@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'classes';
+@import 'button';
+@import 'mediaqueries';
+
+body {
+    font-family: var(--fuentePrincipal);
+    background-color: var(--primarioOscuro);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
