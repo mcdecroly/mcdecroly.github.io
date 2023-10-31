@@ -1,0 +1,138 @@
+:root {
+    --primario: #0F1C54;
+    --primarioOscuro: #010326;
+    --secundario: #419BBF;
+    --secundarioClaro: #4EBFD9;
+    --texto: rgb(242, 68, 132);
+    --btn-hover: hsl(338, 100%, 50%);
+
+    --fuentePrincipal: 'Electrolize', sans-serif;;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    background-color: var(--primarioOscuro);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.error-container {
+    background-color: var(--primario);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    max-width: 70vw;
+    height:80vh;
+    padding: 20px;
+    transition: all 1s;
+}
+
+.error-container img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.error-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+    transition: all 1s;
+
+    /* padding: 0 20px; */
+    width: 50%;
+}
+
+.error-text h1 {
+    color: var(--texto);
+    font-size: 2em;
+    margin: 0;
+    transition: all 1s;
+}
+
+.error-text h3{
+    color: var(--secundarioClaro);
+    margin: 0;
+    padding: 0;
+    line-height: 5;
+    transition: all 1s;
+}
+
+
+.error-text p {
+    color: var(--secundario);
+}
+
+.btn {
+    background-color: var(--texto);
+    color: var(--primarioOscuro);
+    padding: 10px 20px;
+    text-decoration: none;
+    align-self: center;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    width: auto;
+    font-size: 12pt;
+    transition: all 0.5s;
+}
+
+.box-shadow{
+    box-shadow: rgba(242, 68, 132, 0.4) 5px 5px, 
+    rgba(242, 68, 132, 0.3) 10px 10px, 
+    rgba(242, 68, 132, 0.2) 15px 15px, 
+    rgba(242, 68, 132, 0.1) 20px 20px, 
+    rgba(242, 68, 132, 0.05) 25px 25px;
+}
+
+@media (max-width:850px){
+    .error-container {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .error-text {
+        padding:0;
+        width: 90%;
+    }
+
+    .error-container img{
+        width:100%;
+    }
+
+    .error-container h3{
+        line-height: 3;
+        margin: auto 0;
+    }
+
+    .btn {
+        align-self: start;
+    }
+
+    .btn:active{
+        background-color: var(--btn-hover);
+        color: white;
+        font-size: 12pt;
+        padding: 17px 32px;
+    }
+}
+
+@media (min-width:850px){
+
+    .error-container:hover{
+        max-width: 75vw;
+        height:85vh;
+    }
+
+    .btn:hover{
+        background-color: var(--btn-hover);
+        color: white;
+        font-size: 12pt;
+        padding: 17px 32px;
+    }
+}
