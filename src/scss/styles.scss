@@ -4,8 +4,8 @@
 @import 'mediaqueries';
 
 body {
-    font-family: var(--fuentePrincipal);
-    background-color: var(--primarioOscuro);
+    font-family: $fuentePrincipal;
+    background-color: $primarioOscuro;
     margin: 0;
     padding: 0;
     display: flex;

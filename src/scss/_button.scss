@@ -1,13 +1,14 @@
 .btn {
-    background-color: var(--texto);
-    color: var(--primarioOscuro);
-    padding: 10px 20px;
+    background-color: $texto;
+    color: $primarioOscuro;
+    padding: 15px 60px;
     text-decoration: none;
     align-self: center;
-    border-radius: 5px;
+    border-radius: 10px;
     display: inline-block;
     margin-top: 10px;
     width: auto;
     font-size: 12pt;
-    transition: all 0.5s;
+    transition: color 0.7s, padding 0.5s, text-transform 0.7s;
+    // text-transform: uppercase;
 }
