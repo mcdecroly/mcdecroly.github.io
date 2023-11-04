@@ -117,36 +117,35 @@
     height: 85vh;
   }
   .btn:hover {
-    /* background: rgb(63, 94, 251); */
+    background: rgb(63, 94, 251);
     background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
-    background-size: 200% 200%;
     text-transform: uppercase;
     color: white;
     font-size: 12pt;
     padding: 20px 70px;
-    animation: slidebg 1.5s ease 1;
+    animation: slidebg 5s radial infinite;
   }
-  @keyframes slidebg { 
+  @keyframes slidebg {
     0% {
-      background-position: 0% 50%;
+      background: radial-gradient(circle farthest-corner at left top, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
     }
     50% {
-      background-position: 100% 50%;
+      background: radial-gradient(circle farthest-corner at top, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
     }
     100% {
-      background-position: 0% 50%;
+      background: radial-gradient(circle farthest-corner at right top, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
     }
   }
-
-body {
-    font-family: "Electrolize", sans-serif;
-    background-color: #010326;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
 }
+body {
+  font-family: "Electrolize", sans-serif;
+  background-color: #010326;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 /*# sourceMappingURL=styles1.css.map */
